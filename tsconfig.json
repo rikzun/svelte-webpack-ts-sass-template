@@ -1,0 +1,19 @@
+{
+  "exclude": ["./webpack.config.js"],
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es6",             // min version for typescript
+    "module": "es6",             // min version for svelte props
+    "types": ["node", "svelte"], // required for svelte
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "importsNotUsedAsValues": "error",
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "allowJs": true
+  }
+}
