@@ -20,7 +20,7 @@ module.exports = {
     path: paths.outputDir,
     filename: 'bundle.[fullhash:8].js',
     chunkFilename: '[name].[chunkhash:8].js',
-    publicPath: '/'
+    publicPath: 'auto'
   },
   resolve: {
     alias: {
