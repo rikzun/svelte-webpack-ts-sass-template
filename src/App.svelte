@@ -1,5 +1,5 @@
 <script lang="ts">
-    import SvelteLogoURL from './static/svelte_logo.png'
+    import SvelteLogoURL from '../static/svelte_logo.png'
 </script>
 
 <template>

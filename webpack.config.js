@@ -8,9 +8,9 @@ const path = require('path')
 const isProduction = process.env.NODE_ENV === 'production'
 const paths = {
   entry: path.join(__dirname, 'src', 'index.ts'),
-  template: path.join(__dirname, 'src', 'static', 'index.html'),
+  template: path.join(__dirname, 'static', 'index.html'),
   outputDir: path.join(__dirname, 'dist'),
-  staticDir: path.join(__dirname, 'src', 'static')
+  staticDir: path.join(__dirname, 'static')
 }
 
 module.exports = {
@@ -20,7 +20,7 @@ module.exports = {
     path: paths.outputDir,
     filename: 'bundle.[fullhash:8].js',
     chunkFilename: '[name].[chunkhash:8].js',
-    publicPath: './'
+    publicPath: '/'
   },
   resolve: {
     alias: {
